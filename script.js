@@ -28,6 +28,7 @@ $(document).ready(function () {
         infinite: false,
         prevArrow: '<button type="button" class="slick-prev">&lt;</button>',
         nextArrow: '<button type="button" class="slick-next">&gt;</button>',
+        focusOnChange: true,
     });
 
     const appearanceTimers = {};
@@ -42,6 +43,7 @@ $(document).ready(function () {
             undefined
         );
     });
+    $(".slick-current").focus();
 });
 
 function enterFullscreen() {
@@ -65,11 +67,13 @@ $(document).on("fullscreenchange webkitfullscreenchange mozfullscreenchange MSFu
         // when in fullscreen
         function () {
             $("header").hide();
+            $(".slick-current").focus();
         },
         // when not in fullscreen
         function () {
             $("header").show();
             $(".exit-fullscreen-btn").removeClass("shown");
+            $(".slick-current").focus();
         }
     );
 });
