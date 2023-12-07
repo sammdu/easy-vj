@@ -1,0 +1,218 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "HK Grotesk Wide", "HK Grotesk", "Inter", "Roboto", Helvetica,
+        Aria, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER STYLES */
+
+header {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header h2 {
+    margin: 0 0;
+    pading: 0 0.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.fullscreen-btn,
+.exit-fullscreen-btn {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    opacity: 0.75;
+    border: none;
+    border-radius: 0.5rem;
+    display: inline-flex;
+}
+
+.fullscreen-btn:hover,
+.exit-fullscreen-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.fullscreen-btn {
+    margin-left: auto;
+    background: transparent;
+}
+
+.exit-fullscreen-btn {
+    position: fixed;
+    top: 2vw;
+    right: 2vw;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 101;
+    display: none;
+}
+
+.exit-fullscreen-btn.shown {
+    display: flex;
+}
+
+/* VIDEO CONTAINER & OVERLAY STYLES */
+
+.video-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container .overlay-carousel {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container .overlay-carousel {
+    position: relative;
+    z-index: 100;
+}
+
+.slick-list,
+.slick-track {
+    height: 100%;
+}
+
+.slick-arrow {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12vw;
+    font-weight: bolder;
+    color: white;
+    opacity: 0.75;
+    background: transparent;
+    border: none;
+    display: none !important;
+    transition: display 3s;
+}
+
+.slick-arrow.shown {
+    display: flex !important;
+}
+
+.slick-arrow:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.overlay-carousel .slick-arrow.slick-disabled {
+    display: none !important;
+}
+
+.slick-prev {
+    left: 2rem;
+}
+
+.slick-next {
+    right: 2rem;
+}
+
+.overlay-slide {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.overlay-content {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.overlay-content .bigthing {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.overlay-content .bigthing h1 {
+    font-size: 10vw;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay-content .subtitle {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2.5vw;
+    padding: 0;
+    margin: 0 0;
+    height: 4vw;
+    width: 100%;
+}
+
+.overlay-content .subtitle.align-left {
+    justify-content: flex-start;
+}
+
+.overlay-content .subtitle.align-center {
+    justify-content: center;
+}
+
+.overlay-content .subtitle.align-right {
+    justify-content: flex-end;
+}
+
+/* ICONS */
+
+.icon-left {
+    margin-right: 0.3em;
+}
+
+.icon-right {
+    margin-left: 0.3em;
+}
+
+span.icon.ig {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    padding-top: 0.4em;
+    background-image: url('assets/images/Instagram_Icon_Gradient_128.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

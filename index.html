@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Easy VJ</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Stylesheets -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/minireset.css@0.0.7/minireset.min.css"
+            integrity="sha256-VYVKbS0EzvPMdCSwvd1BuPXZtwJudXc2nx0+yvpzHf0="
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- Scripts -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+            integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A="
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h2>Easy VJ</h2>
+            <button type="button" class="fullscreen-btn" onclick="enterFullscreen()">&lt;&gt;</button>
+        </header>
+
+        <button type="button" class="exit-fullscreen-btn" onclick="exitFullscreen()">&gt;&lt;</button>
+
+        <main class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/9FsaH9r70yw?wmode=transparent&playlist=9FsaH9r70yw&autoplay=1&mute=1&controls=0&cc_load_policy=0&iv_load_policy=3&colors=white&loop=1&disablekb=1"
+                frameborder="0"></iframe>
+
+            <!-- [BEGIN] Carousel Slides -->
+            <div class="overlay-carousel">
+                <!-- S1 -->
+                <div class="overlay-slide">
+                    <div class="overlay-content">
+                        <span class="subtitle top">
+                            <span class="icon ig icon-left" alt="[IG]"></span> coach.rich.music_
+                        </span>
+                        <div class="bigthing">
+                            <h1>COACH RICH</h1>
+                        </div>
+                        <span class="subtitle btm align-right"> Tag us: @isocutscrew @bardemto </span>
+                    </div>
+                </div>
+                <!-- S2 -->
+                <div class="overlay-slide">
+                    <div class="overlay-content">
+                        <span class="subtitle top"> <span class="icon ig icon-left" alt="[IG]"></span> samm.du </span>
+                        <div class="bigthing">
+                            <h1>SAMM DU</h1>
+                        </div>
+                        <span class="subtitle btm align-right"> Tag us: @isocutscrew @bardemto </span>
+                    </div>
+                </div>
+            </div>
+            <!-- [END] Carousel Slides -->
+        </main>
+    </body>
+</html>
