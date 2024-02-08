@@ -5,8 +5,7 @@ body {
     padding: 0;
     background-color: #000;
     color: #fff;
-    font-family: "HK Grotesk Wide", "HK Grotesk", "Inter", "Roboto", Helvetica,
-        Aria, sans-serif;
+    font-family: "HK Grotesk Wide", "hk_grotesk_wide", "HK Grotesk", "Inter", "Roboto", Helvetica, Aria, sans-serif;
 }
 
 body {
@@ -217,7 +216,7 @@ span.icon.ig {
     height: 1em;
     width: 1em;
     padding-top: 0.4em;
-    background-image: url('assets/images/Instagram_Icon_Gradient_128.png');
+    background-image: url("assets/images/Instagram_Icon_Gradient_128.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
