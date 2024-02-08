@@ -185,8 +185,13 @@ header h2 {
     font-size: 2.5vw;
     padding: 0;
     margin: 0 0;
-    height: 4vw;
+    min-height: 4vw;
     width: 100%;
+    min-width: 60vw;
+}
+
+.overlay-content .subtitle.btm {
+    align-items: flex-start;
 }
 
 .overlay-content .subtitle.align-left {
@@ -199,6 +204,14 @@ header h2 {
 
 .overlay-content .subtitle.align-right {
     justify-content: flex-end;
+}
+
+.overlay-content .subtitle.align-spread {
+    justify-content: space-between;
+}
+
+.overlay-content img.img-med {
+    width: 5em;
 }
 
 /* ICONS */
